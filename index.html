@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center; /* Центрирование текста */
+            padding: 20px;
+        }
+        
+        .dog-image {
+            max-width: 100%; /* Адаптивная ширина изображения */
+            height: auto; /* Автоматическая высота */
+            border-radius: 10px; /* Закругленные углы изображения */
+        }
+
+        .text-border {
+            padding: 15px; /* Отступы внутри рамки */
+            border-radius: 10px; /* Закругленные углы рамки */
+            background-color: #fff; /* Цвет фона рамки */
+            margin: 20px; /* Отступы вокруг рамки */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень */
+        }
+        .m {
+    color:#222424;
+    border-radius: 15px; /* Сглаженные углы */
+    padding: 20px;
+    text-align: center; /* Центрирование текста */
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: appear 2s forwards;
+    margin-bottom: 20px; /* Отступ снизу */
+    
+}
+.w {
+    color:rgb(255, 255, 255);
+    border-radius: 15px; /* Сглаженные углы */
+    padding: 20px;
+    text-align: center; /* Центрирование текста */
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: appear 2s forwards;
+    margin-bottom: 20px; /* Отступ снизу */
+}
+@keyframes appear {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        img {
+            max-width: 100%;
+            border-radius: 15px; /* Сглаженные углы для изображения */
+            opacity: 0;
+            animation: imageFadeIn 2s forwards;
+            display: block; /* Отображение изображения как блочного элемента */
+            margin: 20px auto; /* Центрирование изображения */
+        }
+
+        @keyframes imageFadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="m">Шпицы</h1>
+    <img src="https://ajo-pet.ru/u/ckupload/files/Pomeranian2.jpg" class="dog-image">
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div class="card" style="width: 18rem; margin: auto;">
+        <div class="card-body">
+          <h5 class="m">О Шпицах</h5>
+          <p class="m">карточка по которой вы можете перейти в место где на странице есть информация о шпицах</p>
+          <a href="#section1" class="btn btn-primary stretched-link">Перейти</a>
+        </div>
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div class="card" style="width: 18rem; margin: auto;">
+        <div class="card-body">
+          <h5 class="m">Породы шпицов</h5>
+          <p class="m">породы шпицов</p>
+          <a href="#section2" class="btn btn-primary stretched-link">Перейти</a>
+        </div>
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div class="card" style="width: 18rem; margin: auto;">
+        <div class="card-body">
+          <h5 class="m">Прикольные штуки</h5>
+          <p class="m">Игры и разные штуки</p>
+          <a href="#section4" class="btn btn-primary stretched-link">Перейти</a>
+        </div>
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div class="card" style="width: 18rem; margin: auto;">
+        <div class="card-body">
+          <h5 class="m">Информация про шпицов</h5>
+          <p class="m">Информация про шпицов</p>
+          <a href="#section3" class="btn btn-primary stretched-link">Перейти</a>
+        </div>
+    </div>
+    
+    <section id="section1">
+        <h1 class="m">О шпицах</h1>
+        <p class="m">О шпицах</p>
+        <img src="https://s0.rbk.ru/v6_top_pics/media/img/0/51/756752362091510.jpg" class="dog-image" height="600" width="650">
+        <div class="text-border">
+        <p class="m">Померанский шпиц или миниатюрный шпиц (нем. deutsch Zwergspitz) — порода собак, относящаяся к категории «Шпицы и породы примитивного типа» по классификации МКФ.
+        померанского шпица мягкая набивная пушистая шерсть, короткая небольшая мордочка и пушистый лоб. Шпицы не часто линяют. 
+        В Америке и в России долгое время этих шпицев называли иначе — цвергшпицами (нем. Zwergspitz — «карликовый шпиц») или просто карликовыми. Это самый маленький представитель шпицев.
+   
+        Во времена правления королевы Виктории, в 1870 году, шпицы из Англии попадают в Европу, где начинается работа по созданию карликовой формы, улучшению «одёжки» померанца и приданию ему общей изысканности. Красота лучших представителей английских и американских шпицев оказывает большое влияние на заводчиков всего мира, и постепенно шпицы в других странах видоизменяются, подтягиваясь к эталонному померанскому шпицу. Сама королева так любила своего шпица Марко, что была с ним всегда и везде.</p>
+        <h5 class="m">Интересные факты:</p>
+        <p class="m">Разнообразие пород: Существует несколько разновидностей шпицев, включая померанского шпица, немецкого шпица, финского шпица и другие. Каждая из этих пород имеет свои особенности и характерные черты.</p>
+        <p class="m">Размеры: Шпицы бывают разных размеров — от маленьких (померанцев) до более крупных (немецких шпицев). Это делает их популярными как среди любителей маленьких собак, так и среди тех, кто предпочитает более крупных питомцев.</p>
+        <p class="m"> Характер: Шпицы обычно очень дружелюбные, энергичные и умные собаки. Они легко обучаются и хорошо ладят с детьми и другими животными, что делает их отличными компаньонами.</p>
+        <p class="m">Уход за шерстью: Пухлая шерсть шпицев требует регулярного ухода. Их нужно регулярно чесать, чтобы предотвратить образование колтунов и сохранить шерсть в хорошем состоянии.</p>
+        <p class="m"> Активность: Шпицы любят активные игры и прогулки. Они нуждаются в физической активности и умственной стимуляции, чтобы оставаться счастливыми и здоровыми.</p>
+        <p class="m">Здоровье: Как и многие породы, шпицы могут быть предрасположены к определённым заболеваниям, таким как проблемы с зубами и глазами. Регулярные ветеринарные осмотры помогут выявить и предотвратить возможные проблемы.</p>
+        </div>
+    </section>
+    <section id="section2">
+        <h1 class="m">Породы шпицов</h1>
+        <p class="m">Породы шпицов</p>
+        <img src="https://avatars.dzeninfra.ru/get-zen_doc/1578824/pub_62b1abfe90520a3187a36db2_62b1ad2587d89902d9ea823e/scale_1200" class="dog-image">
+        <div class="text-border">
+            <p class="m">Шпицы — это группа пород собак, которые отличаются своей пушистой шерстью и энергичным характером. Одной из самых известных пород является померанский шпиц, который славится своей неотразимой внешностью и ярким характером. Эти собаки очень популярны среди владельцев благодаря своей дружелюбности и игривости.
+                Существует несколько видов шпицев, которые различаются по размеру и внешнему виду. Например, немецкий шпиц бывает пяти различных размеров, начиная от миниатюрного до более крупных. Каждый вид шпицев имеет свои уникальные черты и особенности, что делает их привлекательными для разных людей.
+                Если вы хотите узнать больше о шпицах, их характере и уходе, вы можете ознакомиться с различными ресурсами, которые предлагают подробную информацию о каждой породе и советы по содержанию.</p>
+            
+        </div>
+        
+            <button class="btn btn-primary" type="submit" onclick="show()">все породы шпицов</button>
+    </section>
+    <section id="section4">
+        <h1 class="m">Прикольные штуки</h1>
+        <img src="https://avatars.mds.yandex.net/i?id=1bab82877eda081f43ffd29cc6cb4970_l-3888391-images-thumbs&n=13" class="dog-image">     
+        <button class="btn btn-primary" type="submit" id="generate-btn">Сгенерировать цитату про шпица</button>
+        <p id="spitz-quote" class="m"></p>
+        <h1 class="m">Случайное изображение</h1>
+        <img id="randomImage" src="" alt="Случайное изображение" style="max-width: 500px; max-height: 500px;">
+        <button type="button" class="btn btn-primary" id="newImageButton">Показать другое изображение</button>
+
+    </section>
+    <section id="section3">
+        <h1 class="m">Информация про шпицов</h1>
+        <button class="btn btn-primary" type="submit" onclick="sd()">масса шпицов</button>
+        <button class="btn btn-primary" type="submit" onclick="ss()">рост шпицов</button>
+        <button class="btn btn-primary" type="submit" onclick="s()">длительность жизни</button>
+        <p></p>
+        <button class="btn btn-primary" type="submit" onclick="w()">самая известная порода</button>
+        <button class="btn btn-primary" type="submit" onclick="ww()">кто сделал шпицов популярными</button>
+        <button class="btn btn-primary" type="submit" onclick="f()">интересный факт</button>
+        <p></p>
+        <button class="btn btn-primary" type="submit" onclick="c()">от какой породы произошли шпицы</button>
+        <p></p>
+    </section>
+    <button class="btn btn-primary" type="submit" onclick="z()">создатель сайта</button>
+    <script>
+        function show()  {
+        alert("Классический Стандартный вид миниатюрной разновидности из немецкой группы, разработанный собаководами из Германии, Лисий, Медвежий, Игрушечный (кукольный), Самоедский шпиц (самоед), Евразиер (ойразиер), Вольфшпиц (кеесхонд), Финский шпиц")
+     }
+     function sd()  {
+        alert("1,4 – 3,2 кг")
+     }
+     function ss()  {
+        alert("18 – 24 см")
+     }
+     function s()  {
+        alert("12 – 16 лет")
+     }
+     function w() {
+            alert("померанские шпицы");
+        }
+     function ww()  {
+        alert("Королева Виктория сыграла ключевую роль в популяризации померанского шпица. Она впервые увидела этих собак в Италии и была настолько очарована ими, что привезла нескольких особей в Англию. Вскоре шпицы стали неотъемлемой частью королевского двора.")
+     }
+     function f()  {
+        alert("Померанские шпицы — настоящие звезды социальных сетей. Восхитительная внешность и гордый нрав этих собачек толкает их на самые разные выходки. Это сделало померанцев настоящими звездами Сети. У некоторых из них есть целые армии фанатов. Например, у шпица по имена Бу более 17 миллионов подписчиков только в одной соцсети!")
+     }
+     function c()  {
+        alert("deutscher spitz) — порода собак. Собака-компаньон. Немецкие шпицы являются потомками торфяной собаки каменного века «canis familiaris palustris Ruthimeyer» и более позднего свайного шпица. Считаются старейшей в Средней Европе породой и предками множества других пород.")
+     }
+     function z()  {
+        alert("CapybaraABC.NET")
+     }
+     const quotes = ["Шпицы — это маленькие пушистые комки счастья!", "Если у вас есть шпиц, у вас есть друг на всю жизнь.",
+    "Шпицы знают секреты счастья — это просто побольше гулять!",
+    "Каждый шпиц — это маленький охранник вашей радости.",
+    "Шпицы умеют делать людей счастливыми одним своим взглядом.",
+    "Пушистые шпицы — это природа в миниатюре!",
+    "С шпицем каждый день — это праздник!",
+    "«Шпиц притягивает взорыб, Он дарит нежность и любовь, И забываешь про всё горе, Чтоб к жизни возвратиться вновь»",];
+
+    document.getElementById('generate-btn').addEventListener('click', function() {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        document.getElementById('spitz-quote').innerText = quotes[randomIndex];
+    });
+
+    const im = [
+            "https://sun9-25.userapi.com/impg/xV9XEaF5FJSLbwm834dG7w6mRGTp--NlPi-54A/OCi0HvWNWEQ.jpg?size=604x549&quality=95&sign=3e55ad76499949eba2aa70ba0adbc1ee&type=album",
+            "https://static.tildacdn.com/stor3364-3330-4265-a534-303037323532/67445891.jpg",
+            "https://i.pinimg.com/originals/37/39/fc/3739fc91d26f4fc5ccbdf5197625f91f.jpg",
+            "https://media.makler.md/production/an/original/000/051/963/000051963186.jpg",
+            "https://hips.hearstapps.com/hmg-prod/images/small-dogs-good-with-kids-pomeranian-1569462929.jpg",
+            "https://i.pinimg.com/736x/90/fb/68/90fb680484ec2228b725fccdfc0a1a73.jpg"
+        ];
+
+        function getRandom() {
+            const randomIm = Math.floor(Math.random() * im.length);
+            return im[randomIm]; 
+        }
+
+        // Устанавливаем начальное изображение
+        document.getElementById('randomImage').src = getRandom();
+
+        // Добавляем обработчик события для кнопки
+        document.getElementById('newImageButton').addEventListener('click', function() {
+            document.getElementById('randomImage').src = getRandom();
+        });
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
